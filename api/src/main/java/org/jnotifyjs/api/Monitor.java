@@ -12,7 +12,12 @@ import org.jnotifyjs.ressource.SupportType;
  * To change this template use File | Settings | File Templates.
  */
 public  interface  Monitor  <C extends Ressource, B extends SupportType<C>, A extends Support<B>> {
+
     public void addListener(EventListener<C> list);
+    public void lookForCreationEvent();
+    public void lookForDeletionEvent();
+    public void lookForRenammingEvent();
+    public void lookForModificationEvent();
     public void raiseCreationEvent();
     public void raiseDeletionEvent();
     public void raiseRenammingEvent();
