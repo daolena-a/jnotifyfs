@@ -17,10 +17,10 @@ import java.io.File;
  * To change this template use File | Settings | File Templates.
  */
 public  interface  EventListener <T extends Ressource> {
-    public void  ressourceCreated(CreationDescriptor<T> desc);
-    public void  ressourceDeleted (DeletionDescriptor<T> desc);
-    public void  ressourceModified (ModificationDescriptor<T> desc);
-    public void  ressourceRenamed (RenammingDescriptor<T> desc);
+    public void  resourceCreated(CreationDescriptor<T> desc);
+    public void  resourceDeleted (DeletionDescriptor<T> desc);
+    public void  resourceModified (ModificationDescriptor<T> desc);
+    public void  resourceRenamed (RenammingDescriptor<T> desc);
 
 
 }

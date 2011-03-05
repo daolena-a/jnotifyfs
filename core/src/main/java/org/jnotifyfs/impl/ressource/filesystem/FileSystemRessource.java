@@ -2,6 +2,8 @@ package org.jnotifyfs.impl.ressource.filesystem;
 
 import org.jnotifyjs.ressource.Ressource;
 
+import java.io.File;
+
 /**
  * Created by IntelliJ IDEA.
  * User: adrien
@@ -10,4 +12,8 @@ import org.jnotifyjs.ressource.Ressource;
  * To change this template use File | Settings | File Templates.
  */
 public class FileSystemRessource extends Ressource {
+    File resource;
+    public FileSystemRessource (File file){
+        resource = file;
+    }
 }

@@ -2,6 +2,8 @@ package org.jnotifyfs.impl.ressource.filesystem;
 
 import org.jnotifyjs.ressource.SupportType;
 
+import java.io.File;
+
 /**
  * Created by IntelliJ IDEA.
  * User: adrien
@@ -12,6 +14,8 @@ import org.jnotifyjs.ressource.SupportType;
 public class FileSystemType extends SupportType<FileSystemRessource> {
     @Override
     public FileSystemRessource getRessource(String path2ressource) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+         File f = new File(path2ressource);
+        return new FileSystemRessource(f);
+
     }
 }

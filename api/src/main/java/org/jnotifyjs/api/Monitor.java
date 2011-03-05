@@ -14,6 +14,7 @@ import org.jnotifyjs.ressource.SupportType;
 public  interface  Monitor  <C extends Ressource, B extends SupportType<C>, A extends Support<B>> {
 
     public void addListener(EventListener<C> list);
+    public void startListening();
     public void lookForCreationEvent();
     public void lookForDeletionEvent();
     public void lookForRenammingEvent();
