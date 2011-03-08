@@ -1,5 +1,6 @@
 package org.jnotifyfs.impl.ressource.filesystem;
 
+import org.jnotifyjs.api.EventListener;
 import org.jnotifyjs.ressource.Support;
 
 /**
@@ -9,6 +10,7 @@ import org.jnotifyjs.ressource.Support;
  * Time: 12:15 AM
  * To change this template use File | Settings | File Templates.
  */
-public class FileSystem extends Support<FileSystemType> {
+public class FileSystem extends Support {
+
 
 }

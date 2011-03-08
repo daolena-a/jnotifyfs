@@ -1,5 +1,7 @@
 package org.jnotifyjs.ressource;
 
+import org.jnotifyjs.api.EventListener;
+
 /**
  * Created by IntelliJ IDEA.
  * User: adrien
@@ -8,5 +10,12 @@ package org.jnotifyjs.ressource;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class Support<E extends Ressource, T extends SupportType<E>> {
+    T supportType;
+    E ressource;
+    public String getRessourceId(String id){
+        return supportType.getRessource(id).getIdentifier();
+    }
+
+       EventListener<Support> listener;
 
 }

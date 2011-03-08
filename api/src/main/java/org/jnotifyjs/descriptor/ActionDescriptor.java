@@ -1,6 +1,7 @@
 package org.jnotifyjs.descriptor;
 
 import org.jnotifyjs.ressource.Ressource;
+import org.jnotifyjs.ressource.Support;
 
 import java.io.File;
 
@@ -11,10 +12,10 @@ import java.io.File;
  * Time: 10:10 PM
  * To change this template use File | Settings | File Templates.
  */
-public abstract class ActionDescriptor <T extends Ressource> {
-    T targetedRessource;
+public abstract class ActionDescriptor  {
+    Support targetedRessource;
     public String getRessourceId(){
-        return targetedRessource.getIdentifier();
+        return targetedRessource.getRessourceId("");
     }
     public abstract String whatHappened();
 }
