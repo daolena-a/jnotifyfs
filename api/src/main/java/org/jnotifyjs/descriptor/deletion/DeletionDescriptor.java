@@ -12,6 +12,11 @@ import org.jnotifyjs.ressource.Support;
  * To change this template use File | Settings | File Templates.
  */
 public class DeletionDescriptor extends ActionDescriptor{
+    String identifierOfDeletedRessource ;
+    public void setIdentifierOfDeletedRessource(String s){
+        identifierOfDeletedRessource = s;
+    }
+
         @Override
     public String whatHappened() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.

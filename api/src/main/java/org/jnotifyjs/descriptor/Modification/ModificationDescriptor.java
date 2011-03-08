@@ -12,6 +12,8 @@ import org.jnotifyjs.ressource.Support;
  * To change this template use File | Settings | File Templates.
  */
 public class ModificationDescriptor extends ActionDescriptor{
+    String idRessourceBefore;
+    Ressource newressource;
         @Override
     public String whatHappened() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.

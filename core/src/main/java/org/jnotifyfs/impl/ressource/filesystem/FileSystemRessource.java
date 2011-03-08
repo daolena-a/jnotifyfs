@@ -11,7 +11,8 @@ import java.io.File;
  * Time: 12:12 AM
  * To change this template use File | Settings | File Templates.
  */
-public class FileSystemRessource extends Ressource {
+public class FileSystemRessource<File> extends Ressource{
+
     File resource;
     public FileSystemRessource (File file){
         resource = file;

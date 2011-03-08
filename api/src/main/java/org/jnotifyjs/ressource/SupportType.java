@@ -9,8 +9,8 @@ import java.io.InputStream;
  * Time: 10:40 PM
  * To change this template use File | Settings | File Templates.
  */
-public abstract class SupportType<T extends Ressource> {
+public abstract class SupportType {
     String ID;
-    public abstract T getRessource(String path2ressource);
+  //  public abstract T getRessource(String path2ressource);
 
 }

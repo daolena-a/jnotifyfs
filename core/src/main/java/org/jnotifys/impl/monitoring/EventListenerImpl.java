@@ -14,20 +14,20 @@ import org.jnotifyjs.descriptor.deletion.DeletionDescriptor;
  * Time: 9:28 PM
  * To change this template use File | Settings | File Templates.
  */
-public class EventListenerImpl implements EventListener<FileSystem>{
-    public CreationDescriptor<FileSystem> resourceCreated() {
+public class EventListenerImpl implements EventListener{
+    public CreationDescriptor resourceCreated() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    public DeletionDescriptor<FileSystem> resourceDeleted() {
+    public DeletionDescriptor resourceDeleted() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    public ModificationDescriptor<FileSystem> resourceModified() {
+    public ModificationDescriptor resourceModified() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    public RenammingDescriptor<FileSystem> resourceRenamed() {
+    public RenammingDescriptor resourceRenamed() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }

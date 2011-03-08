@@ -13,9 +13,9 @@ import org.jnotifyjs.api.Monitor;
  * Time: 9:28 PM
  * To change this template use File | Settings | File Templates.
  */
-public class MonitorImpl implements Monitor<FileSystemRessource,FileSystemType,FileSystem>{
-    EventListener<FileSystem> listener =  new EventListenerImpl<FileSystem>();
-    public void addListener(EventListener<FileSystem> list) {
+public class MonitorImpl implements Monitor{
+    EventListener listener =  new EventListenerImpl();
+    public void addListener(EventListener list) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
