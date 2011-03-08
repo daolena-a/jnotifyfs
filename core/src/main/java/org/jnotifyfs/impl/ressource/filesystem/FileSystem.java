@@ -10,4 +10,5 @@ import org.jnotifyjs.ressource.Support;
  * To change this template use File | Settings | File Templates.
  */
 public class FileSystem extends Support<FileSystemType> {
+
 }

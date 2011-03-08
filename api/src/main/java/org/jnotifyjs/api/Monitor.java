@@ -11,7 +11,7 @@ import org.jnotifyjs.ressource.SupportType;
  * Time: 11:36 PM
  * To change this template use File | Settings | File Templates.
  */
-public  interface  Monitor  <C extends Ressource, B extends SupportType<C>, A extends Support<B>> {
+public  interface  Monitor  <C extends Ressource, B extends SupportType<C>, A extends Support<C,B> > {
 
     public void addListener(EventListener<C> list);
     public void startListening();
